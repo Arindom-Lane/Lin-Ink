@@ -1,0 +1,5 @@
+#!/bin/sh
+# AppImage entry point: run the bundled binary. $APPIMAGE (set by the AppImage runtime) is what
+# the app uses to restart itself and to write the login-autostart entry.
+HERE="$(dirname "$(readlink -f "$0")")"
+exec "$HERE/usr/bin/pen-touch" "$@"

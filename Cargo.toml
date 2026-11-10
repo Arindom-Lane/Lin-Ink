@@ -1,0 +1,24 @@
+[package]
+name = "pen-touch"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Use a pen tablet as a native touch screen, with an on/off switch that survives reboots"
+license = "MIT"
+
+[features]
+default = ["gui"]
+gui = ["dep:eframe"]
+
+[dependencies]
+evdev = "0.13"
+libc = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+eframe = { version = "0.32", default-features = false, features = ["glow", "default_fonts", "x11", "wayland"], optional = true }
+
+[profile.release]
+opt-level = 2
+strip = true
+codegen-units = 16

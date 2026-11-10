@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Pen Touch
+GenericName=Pen tablet as touch screen
+Comment=Turn the pen tablet into a native touch screen
+Exec=pen-touch
+Icon=pen-touch
+Terminal=false
+Categories=Utility;Settings;HardwareSettings;
+Keywords=pen;tablet;touch;wacom;stylus;
+StartupWMClass=pen-touch
