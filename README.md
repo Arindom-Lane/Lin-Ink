@@ -1,6 +1,9 @@
 # Pen Touch
 
-Use a pen tablet (Wacom or any evdev tablet) like a **native touch screen** on Linux.
+Use a pen tablet (Wacom or any evdev tablet) like a **native touch screen** on Linux. 
+
+Project fully vibe coded, ty.
+
 
 * One big **on/off switch** in a small window. It stays on/off across logouts and reboots until you change it.
 * The pen becomes a real virtual multitouch screen, so every app handles it *natively*: touch scrolling with
